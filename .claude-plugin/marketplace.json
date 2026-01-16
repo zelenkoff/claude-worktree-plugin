@@ -1,5 +1,7 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "zelenkoff-plugins",
+  "description": "Personal plugin marketplace by Eugene Zelenkov",
   "owner": {
     "name": "Eugene Zelenkov",
     "url": "https://github.com/zelenkoff"
@@ -7,7 +9,17 @@
   "plugins": [
     {
       "name": "worktree",
-      "source": "https://github.com/zelenkoff/claude-worktree-plugin"
+      "description": "Simple git worktree management for parallel Claude Code agents",
+      "version": "1.0.0",
+      "author": {
+        "name": "eugenezelenkov"
+      },
+      "source": {
+        "source": "url",
+        "url": "https://github.com/zelenkoff/claude-worktree-plugin.git"
+      },
+      "category": "productivity",
+      "homepage": "https://github.com/zelenkoff/claude-worktree-plugin"
     }
   ]
 }
