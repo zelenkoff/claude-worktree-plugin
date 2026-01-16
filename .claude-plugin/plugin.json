@@ -1,0 +1,14 @@
+{
+  "name": "worktree",
+  "version": "1.0.0",
+  "description": "Simple git worktree management for parallel Claude Code agents",
+  "author": "eugenezelenkov",
+  "repository": "https://github.com/zelenkoff/claude-worktree-plugin",
+  "keywords": ["git", "worktree", "parallel", "agents", "workflow"],
+  "commands": [
+    "./commands/worktree-start.md",
+    "./commands/worktree-finish.md",
+    "./commands/worktree-list.md",
+    "./commands/worktree-abort.md"
+  ]
+}
