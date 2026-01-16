@@ -11,8 +11,13 @@ This plugin gives you 4 simple commands to manage that workflow without thinking
 ## Installation
 
 ```bash
-/plugin marketplace add eugenezelenkov/claude-worktree
-/plugin install worktree
+/plugin install zelenkoff/claude-worktree-plugin
+```
+
+Or install from local directory:
+
+```bash
+/plugin install /path/to/claude-worktree-plugin
 ```
 
 ## Commands
