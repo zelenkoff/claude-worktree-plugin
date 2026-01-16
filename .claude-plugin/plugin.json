@@ -2,7 +2,10 @@
   "name": "worktree",
   "version": "1.0.0",
   "description": "Simple git worktree management for parallel Claude Code agents",
-  "author": "eugenezelenkov",
+  "author": {
+    "name": "Eugene Zelenkov",
+    "url": "https://github.com/zelenkoff"
+  },
   "repository": "https://github.com/zelenkoff/claude-worktree-plugin",
   "keywords": ["git", "worktree", "parallel", "agents", "workflow"],
   "commands": [
