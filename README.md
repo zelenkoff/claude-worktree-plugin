@@ -29,54 +29,51 @@ This plugin gives you 4 simple commands to manage that workflow without thinking
 ### Single Agent
 
 ```bash
-# Terminal 1 - Main repo
+# Terminal 1
 cd your-project
 claude
 
 # Inside Claude:
 /worktree-start my-feature
-
-# Terminal 2 - New worktree
-cd your-project/trees/my-feature
-claude
+cd trees/my-feature
 
 # Work on your feature...
-# When done, inside Claude:
+
+# When done:
 /worktree-finish
 ```
 
-### Multiple Parallel Agents
+### Multiple Parallel Agents (Recommended)
+
+Open multiple terminals and run Claude in each:
 
 ```bash
-# Terminal 1 - Main repo
+# Terminal 1
 cd your-project
 claude
-
-# Inside Claude, create worktrees:
 /worktree-start feature-auth
-/worktree-start feature-payments
-/worktree-start feature-emails
-
-# Terminal 2
-cd your-project/trees/feature-auth
-claude
+cd trees/feature-auth
 # Work on authentication...
 
-# Terminal 3
-cd your-project/trees/feature-payments
+# Terminal 2
+cd your-project
 claude
+/worktree-start feature-payments
+cd trees/feature-payments
 # Work on payments...
 
-# Terminal 4
-cd your-project/trees/feature-emails
+# Terminal 3
+cd your-project
 claude
+/worktree-start feature-emails
+cd trees/feature-emails
 # Work on email notifications...
 ```
 
-Each Claude agent works in complete isolation. When each feature is ready:
+Each Claude agent works in complete isolation in its own worktree. When each feature is ready:
 
 ```bash
-# Inside each worktree's Claude session:
+# Inside each Claude session:
 /worktree-finish
 ```
 
