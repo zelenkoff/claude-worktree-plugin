@@ -1,0 +1,9 @@
+{
+  "name": "zelenkoff-plugins",
+  "plugins": [
+    {
+      "name": "worktree",
+      "repository": "https://github.com/zelenkoff/claude-worktree-plugin"
+    }
+  ]
+}
