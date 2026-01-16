@@ -1,9 +1,13 @@
 {
   "name": "zelenkoff-plugins",
+  "owner": {
+    "name": "Eugene Zelenkov",
+    "url": "https://github.com/zelenkoff"
+  },
   "plugins": [
     {
       "name": "worktree",
-      "repository": "https://github.com/zelenkoff/claude-worktree-plugin"
+      "source": "https://github.com/zelenkoff/claude-worktree-plugin"
     }
   ]
 }
